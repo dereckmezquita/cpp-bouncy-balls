@@ -31,8 +31,8 @@ Ball::Ball(
     this -> energy = (this -> mass / 2) * pow(velocity.getMagnitude(), 2);
 
     // set origin so when click centre of ball
-    setOrigin(getRadius(), getRadius());
-    setPosition((float)this -> position.x, (float)this -> position.y);
+    setOrigin({getRadius(), getRadius()});
+    setPosition({(float)this -> position.x, (float)this -> position.y});
 }
 
 void Ball::addEnergy(double energy) {
