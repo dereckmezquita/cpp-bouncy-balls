@@ -3,7 +3,15 @@ project(cpp_bouncy_balls)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
-set(SOURCE_FILES main.cpp src/physics/Vec2.cpp src/physics/Vec2.h src/physics/Ball.cpp src/physics/Ball.h)
+set(
+    SOURCE_FILES
+        main.cpp
+        src/physics/Vec2.cpp
+        src/physics/Vec2.h
+        src/physics/Ball.cpp
+        src/physics/Ball.h
+)
+
 add_executable(cpp_bouncy_balls ${SOURCE_FILES})
 
 # Find SFML with capitalized component names
